@@ -2,6 +2,7 @@ import React , {useState} from 'react';
 import './Login.css';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
+
  function Login({user}){
 
     const [userEmail , setUserName] = useState();
@@ -9,7 +10,15 @@ import { connect } from 'react-redux'
     console.log(user)
     const loginHandler = (event)=>{
         event.preventDefault();
-        
+         /* 
+        TODO
+        - add validation: show invalid input error
+        - add a mock file
+        - call checkLogin method
+          - call login api
+        - success: store data in context api
+        - fail: show error
+        */
 
 
     }
