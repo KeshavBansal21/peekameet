@@ -1,0 +1,12 @@
+.im-container{
+    display: flex;
+}
+
+.name{
+    display: flex;
+    
+}
+
+.firstName{
+    width:5rem;
+}
