@@ -102,7 +102,7 @@ const SignInForm = ({ user }) => {
       console.log(true);
       authCtx.login(res.data.data[0].token);
       authCtx.getData(res.data.data[0].customer);
-      navigate("/userProfile");
+      navigate("/userprofile");
     }
     console.log(authCtx.isLoggedIn);
     console.log(authCtx.token);
