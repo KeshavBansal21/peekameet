@@ -3,15 +3,18 @@ import AuthContext from '../context/AuthContext';
 import './UserProfile.css'
 const UserHeader = () =>{
     const authCtx = useContext(AuthContext);
-    console.log(authCtx.userData)
-    console.log(authCtx.userData.additionalImages[0].url);
+    const logoimg=authCtx.userData.profileImage.url
+    // console.log(logoimg )    ;
+    // console.log(authCtx.userData)
+    // console.log(authCtx.userData.);
+    
     let {firstName , lastName ,url ,  jobTitle} = authCtx.userData;
     console.log(firstName ,lastName , url )
 
     return(
         <div className="Header">
         <div className="im-container">
-            <img src={authCtx.userData.additionalImages[0].url} alt={authCtx.userData.additionalImages[0].url}></img>
+            <img src={logoimg} alt={logoimg}></img>
             <div className="details-container">
                 <div className="name">
                     <p className="firstName">{firstName}</p>

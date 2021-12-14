@@ -1,13 +1,14 @@
-import React from 'react';
+import React , {useState} from 'react';
+import NotesSection from '../Notes/NotesSection';
 import UserHeader from './UserHeader';
 import UserQuotes from './UserQuotes';
-export default function UserProfile(){
-   
+import Footer from '../signIn/Footer/Footer';
+
+
+const UserProfile = () =>{
     return(
-       <>
-        <UserHeader></UserHeader>
-     <UserQuotes></UserQuotes> 
-       </>
+        <div>
+            <Profile></Profile>
+        </div>
     )
-    
 }
