@@ -1,4 +1,3 @@
-import Login from "./components/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import UserProfile from "./components/UserProfile/UserProfile";
@@ -29,6 +28,7 @@ function App() {
             }
           ></Route>
           <Route path="/notes" element={<NotesSection/>}></Route>
+          <Route path="/notes/addnotes" element={<AddNotes/>} />
         </Routes>
       </BrowserRouter>
     </div>
